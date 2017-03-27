@@ -1,0 +1,286 @@
+.w1400{
+	width:1400px;
+	margin:0 auto;
+}
+.bgPic{
+	margin:0 auto;
+	position:relative;
+	width:100%;
+	height:460px;
+	background-image:url(../image/sellEvaluate_bg.jpg);
+}
+.bgPic .w1400{
+	overflow: hidden;
+}
+.bgPic .w1400 .right {
+	width:600px;
+	float:right;
+}
+.bgPic .w1400 .right .word{
+
+	color:#fff;
+}
+.bgPic .w1400 .right .word h1{
+	font-size: 50px;
+	line-height:100px;
+}
+.bgPic  .w1400 .right .word span{
+	line-height:40px;
+}
+.bgPic .w1400 .right form{
+	background:#fff;
+	width:380px;
+	height:340px;
+	z-index:2;
+}
+.bgPic .evaluateForm>span{
+	line-height:40px;
+	display:block;
+	height:40px;
+	font-size:18px;
+	margin-left: 30px;
+	margin-top: 25px;
+}
+.bgPic .evaluateForm .input{
+	margin:10px auto;
+	border:2px solid #EDEDED;
+	padding-left:10px;
+	height:30px;
+}
+.bgPic .evaluateForm .input>span{
+	display:block;
+	float:left;
+	color:#999;
+	line-height:30px;
+	font-size:14px;
+	cursor:pointer;
+}
+.bgPic .evaluateForm .input>img{
+	margin:13px 10px 0 0;
+	width:7px;
+	height:4px;
+	float:right;
+	cursor:pointer;
+}
+
+.bgPic .evaluateForm .iptLR{
+	width:306px;
+}
+/*选择车型*/
+.bgPic .evaluateForm .select-box{
+	font-size:12px;
+	border:solid 1px #fd8340;
+	width:536px;
+	height:220px;
+	padding:20px 20px 10px;
+	position:absolute;
+	z-index:5;
+	background: #fff;
+	display: none;
+}
+.select-box .close-btn , .select-time .close-btn,.select-area .close-btn{
+	position:absolute;
+	right:5px;
+	top:5px;
+	cursor: pointer;
+}
+.select-box .wrap,.select-area .wrap {
+	height:200px;
+	border:solid 1px #ddd;
+	margin-top:5px;
+}
+.select-box ul, .select-time ul,.select-area ul{
+	margin-top: 10px;
+	float:left;
+	width:178px;
+	height:200px;
+	overflow-y: scroll;
+}
+.select-box ul li, .select-time ul li,.select-area ul li{
+	height:25px;
+	line-height:25px;
+	padding:0 10px;
+	background: url(../image/arr.gif) no-repeat 152px center;
+	color:#626262;
+	cursor: pointer;
+}
+.select-box ul li.selected {
+	background:url(../image/arr_selected.gif) no-repeat 152px center #fd8340;
+	color:#fff;
+}
+/*选择上牌时间*/
+.select-time{
+	font-size:12px;
+	border:solid 1px #fd8340;
+	width:360px;
+	height:220px;
+	padding:20px 20px 10px;
+	position:absolute;
+	top:350px;
+	z-index:5;
+	background: #fff;
+	display: none;
+}
+/*选择上牌地点*/
+.select-area{
+	font-size:12px;
+	border:solid 1px #fd8340;
+	width:360px;
+	height:220px;
+	padding:20px 20px 10px;
+	position:absolute;
+	left:650px;
+	top:390px;
+	z-index:5;
+	background: #fff;
+	display: none;
+}
+.select-time ul li:hover,.select-area ul li:hover{
+	background:url(../image/arr_selected.gif) no-repeat 152px center #fd8340;
+	color:#fff;
+}
+.bgPic .evaluateForm .iptL,.iptR{
+	width:140px;
+	float:left;
+}
+.bgPic .evaluateForm .iptL{
+	margin-left: 30px;
+	margin-right:12px;
+}
+
+.bgPic .evaluateForm .iptS>span{
+	padding-right:10px;
+}
+.bgPic .evaluateForm .iptS>input{
+	border:none;
+	outline:none;
+	display:block;
+	float:left;
+	width:85px;
+	height:30px;
+}
+.bgPic .evaluateForm>input{
+	border:2px solid #EDEDED;
+	outline:none;
+	display:block;
+	float:left;
+	width:140px;
+	height:30px;
+	padding-left:10px;
+	margin-top: 10px;
+}
+.bgPic .evaluateForm button{
+	border-radius:3px;
+	width:150px;
+	height:40px;
+	background-color:#FF571A;
+	border:none;
+	outline:none;
+	color:white;
+	font-size:16px;
+	margin:25px 120px;
+	cursor:pointer;
+}
+
+.info{
+	width:770px;
+    height:120px;
+	overflow: hidden;
+	margin-top: 60px;
+	padding-left: 50px;
+}
+.info>div{
+	width:200px;
+	height:100px;
+	float:left;
+	margin-left: 20px;
+}
+.info>div span{
+	display: block;
+	line-height: 32px;
+}
+.info>div p{
+	font-size: 14px;
+	line-height: 28px;
+	color:rgb(123,123,123)
+}
+/* Evaluate Dialogue */
+.dialogue{
+	position:relative;
+	padding:60px 50px; 
+	margin:100px auto 0 auto;
+	border:1px solid #EDEDED;
+	width:1050px; height:480px;
+	margin-bottom: 132px;
+}
+.dialogue>h3{line-height:30px;}
+.dialogue>span{
+	margin-bottom:40px;
+	font-size:14px; color:gray;
+	display:block; line-height:20px;}
+/* Dialogue Person */
+.person{overflow:hidden; width:730px;}
+.person>.headPic{
+	padding-top:30px;
+	float:left; margin-top:10px;
+	width:120px; height:170px;}
+.headPic>img{
+	width:53px; height:52px;
+	display:block; margin:0 auto;}
+.headPic>span{
+	font-size:14px; line-height:25px;
+	text-align:center; display:block; }
+.headPic>.s1{margin-top:15px;}
+.headPic>.s2{font-size:12px; color:gray;}
+/* Dialogue Box */
+.talkBox{
+	padding:40px 0 0 50px;
+	float:left; margin-top:20px;
+	background-repeat:no-repeat;}
+.talkBox>span{
+	line-height:23px; color:#666;
+	font-size:14px; display:block;}
+.talkBox>span>strong{color:#ff5517;}
+.talkBoxL{
+	width:553px; height:117px;
+	background-image:url(
+		../image/sellEvaluate_talkBoxL.png);}
+.talkBoxR{
+	width:554px; height:126px;
+	background-image:url(
+		../image/sellEvaluate_talkBoxR.png);}
+
+/* Consult Professor */
+.dialogue>.professor{
+	padding:0 20px;
+	position:absolute;
+	top:150px;left:780px;
+	width:270px; height:420px;}
+.professor>.dashen{
+	height:120px; overflow:hidden;
+	width:100%; margin-top:15px;}
+.professor>.border{
+	border-bottom:1px solid #EDEDED;}
+.dashen>.image{
+	height:70px; float:left;
+	width:80px; text-align:center;}
+.dashen>.word{float:left; height:70px;}
+.dashen>.word>span{font-size:14px;
+	width:190px; display:block;}
+.dashen>.word>.s3{line-height:30px;}
+.dashen>.word>.s4{
+	line-height:20px; color:gray;}
+.dashen>.button{
+	margin-left:13px;
+	border:1px solid #EDEDED;
+	width:98px; height:28px;
+	float:left; overflow:hidden;}
+.dashen>.button>img{
+	margin-top:7px;
+	width:25px; height:13px;
+	display:block; float:left;}
+.dashen>.button>span{
+	line-height:25px;
+	font-size:14px; color:#666;
+	margin-left:3px; float:left;
+	cursor:pointer; display:block;}

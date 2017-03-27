@@ -1,0 +1,177 @@
+
+/* banner */
+.bgBox{
+	width:100%;
+	height:600px;
+	background-color:#1A1A1A;
+	background-image:url("../image/windmillProject_bgpic.jpg") ;
+	overflow: hidden;
+}
+.bgBox .right{
+	width:700px;
+	height:600px;
+	float: right;
+	/*border:1px solid;*/
+}
+/* banner - bgpic */
+.bgPic{
+	margin-top:100px;
+	width:700px;
+	height:360px;
+	/*border:1px solid;*/
+}
+/* banner - ad */
+.bgPic>h1{
+	font-size:46px;
+	color:white;
+}
+/* bgPic - btn */
+.bgPic>.btn{
+   margin-top: 50px;
+}
+.bgPic>.btn>button{
+	border-radius:5px;
+	background-color:#ff571a;
+	color:white;
+	font-size:18px;
+	padding:0 20px;
+	height:50px;
+	border:none;
+	cursor:pointer;
+	outline:none;
+	margin-right:40px;
+}
+/* bgPic - introduce */
+.bgPic>.introduce{
+	margin-top:30px;
+}
+.introduce>a{
+	overflow:hidden;
+	display:inline-block;
+	margin-right:30px;
+}
+.introduce>a>i{
+	background-size:100%;
+	width:20px;
+	height:20px;
+	display:block;
+	float:left;
+	background-repeat:no-repeat;
+}
+.introduce>a>.info{
+	background-position:0 -29px;
+	background-image:url("../image/windmillProject_icons2.png");
+}
+.introduce>a>.video{
+	background-position:0 0;
+	background-image:url("../image/windmillProject_icons2.png");
+}
+.introduce>a>span{
+	line-height:20px;
+	display:block;
+	float:left;
+	font-size:14px;
+	color:white;
+}
+/* bgPic - span */
+.bgPic>.word{
+	margin-top:20px;
+}
+.word>h3{
+	line-height:25px;
+	display:block;
+	color:white;
+}
+.main li{
+	width:100%;
+	height:660px;
+	/*border:1px solid;*/
+}
+.main li .text{
+	padding-top: 80px;
+	height:250px;
+}
+.main li .text h1{
+	text-align: center;
+	line-height: 100px;
+}
+.main li .text span{
+	margin-top: 10px;
+	display: block;
+	font-size:16px;
+	text-align: center;
+	line-height:32px;
+	color:rgb(153,153,153);
+}
+.main li .report,.main li .ERP,.mian li .CRM,.main li .manage,.main li .tax{
+	overflow: hidden;
+	/*border:1px solid;*/
+}
+.main li .report>div,.main li .ERP>div,.main li .CRM>div,.main li .manage>div,.main li .tax>div{
+	float:left;
+	wodth:320px;
+	height:325px;
+	/*border:1px solid;*/
+	margin-left: 100px;
+}
+.main li .report>div img,.main li .CRM>div img,.main li .manage>div img,.main li .tax>div img{
+	width:250px;
+	height:208px;
+}
+
+.main li .ERP>div img{
+	 width:250px;
+	 height:250px;
+ }
+.main li .report>div span,.main li .ERP>div span,.main li .CRM>div span,.main li .manage>div span,.main li .tax>div span{
+	display: block;
+	text-align: center;
+	line-height: 32px;
+}
+.example{
+	margin-top: 100px;
+	width:100%;
+	height:330px;
+	background-image: url("../image/example.png");
+	background-size: 100%;
+}
+.example .words{
+	width:380px;
+	height:240px;
+	color:#fff;
+	margin:0 auto;
+	padding-top: 80px;
+	text-align: center;
+}
+.example .words span{
+	display: block;
+	line-height: 60px;
+}
+.example .words p{
+	line-height: 90px;
+}
+
+.screen-control {
+	width: 20px;
+	position: fixed;
+	top: 50%;
+	margin-top: -50px;
+	left: 30px;
+	display: none;
+}
+.screen-control li {
+	cursor: pointer;
+	width: 14px;
+	height: 14px;
+	background: #d8d8d8;
+	margin: 5px 0;
+	border-radius: 14px;
+}
+.screen-control li.active {
+	background: #ff571a;
+}
+
+
+
+
+

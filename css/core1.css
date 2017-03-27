@@ -1,0 +1,577 @@
+body{
+	width:100%;
+	height:100%;
+	padding-top:80px;
+	position: relative;
+}
+/*基础样式*/
+.w1200{
+	margin:0 auto;
+	width:1200px;
+}
+.w1280{
+	margin:0 auto;
+	width:1280px;
+}
+.icon{
+	background-image:url(../image/icon.png);
+}
+.icon2{
+	background-image:url(../image/aicons3.png);
+}
+
+#all{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgb(17, 17, 17);
+	z-index:101;
+	opacity: 0.7;
+	display:none;
+}
+/*顶部导航*/
+.topNav{
+	top:0;
+	left:0;
+	padding:20px 0;
+	width:100%;
+	height:36px;
+	background-color:white;
+	border-top:4px solid rgb(255, 88, 26);
+	border-bottom:1px solid rgb(230,230,230);
+	/*position: relative;*/
+}
+.topNav a:hover{
+	color: rgb(255, 88, 26);
+	cursor: pointer;
+}
+.logo{
+	float:left;
+	margin:0 18px 0 6px;
+	width:82px;
+	height:36px;
+	background-image:url(../image/logo.png);
+}
+
+.area{
+	float:left;
+	margin:3px 50px 3px 0;
+	width:86px;
+	height:28px;
+	border:1px solid rgb(237, 237, 237);
+	border-radius:2px;
+	position: relative;
+	/*border:1px solid;*/
+}
+.i{
+	 background-image: url("../image/aicons2.png");
+ }
+.i.down{
+	position: absolute;
+	width:8px;
+	height:5px;
+	top:10px;
+	left:65px;
+	background-position: 0 -75px;
+}
+.area span{
+	display:block;
+	padding-left:23px;
+	height:28px;
+	line-height:28px;
+	font-size:14px;
+	color:rgb(102, 102, 102);
+	cursor:pointer;
+}
+.topNav a{
+	color:rgb(51, 51, 51);
+}
+.topNav a:hover{
+	color:rgb(255, 87, 26);
+}
+.topNav .anchor{
+	float:left;
+	margin-right:34px;
+	font-size:14px;
+	line-height:36px;
+	vertical-align:middle;
+}
+.topNav a.anchor:hover, .top .sign:hover{
+	color:rgb(255, 88, 26);
+}
+.topNav div.anchor{
+	display:inline;
+}
+.topNav input{
+	float:left;
+	margin-right:65px;
+	padding:0 8px;
+	width:200px;
+	height:28px;
+	border:2px solid rgb(230, 230, 230);
+	line-height:28px;
+	outline:none;
+}
+.topNav input:focus{
+	border-color:rgb(204, 204, 204);
+}
+.topNav .sign{
+	float:left;
+	margin-right:15px;
+	font-size:12px;
+	line-height:36px;
+}
+.topNav .tel{
+	float:right;
+	width:154px;
+	height:36px;
+}
+.topNav.normal{
+	position:absolute;
+}
+
+/* 地域选择框 */
+/* <div id="areasSelectBox"></div> */
+.area{
+	position:relative;
+	z-index:2;
+	font-size:14px;
+}
+.areaSelectBox{
+	display:none;
+	position:absolute;
+	top:30px;
+	left:-1px;
+	background-color:white;
+	width:318px;
+	height:auto;
+	border:1px solid #FF581A;
+	padding:0 20px 20px 20px;
+}
+
+.areaSelectBox>.hotCity{
+	height:65px;
+	line-height:65px;
+	width:100%;
+	margin-bottom:20px;
+	border-bottom:1px solid #EDEDED;
+}
+.hotCity>span{
+	width:60px;
+	text-align:center;
+	height:65px;
+	line-height:65px;
+	display:block;
+	float:left;
+	color:gray;
+}
+.hotCity>a{
+	display:block;
+	float:left;
+	height:65px;
+	line-height:65px;
+	margin-left:10px;
+	color:#FF581A;
+}
+
+.areaSelectBox>.otherCity{
+	width:100%;
+	height:30px;
+	line-height:30px;
+}
+.otherCity>span{
+	width:59px;
+	text-align:center;
+	height:30px;
+	line-height:30px;
+	border-right:1px solid #EDEDED;
+	display:block;
+	float:left;
+	color:gray;
+}
+.otherCity>a{
+	margin-left:10px;
+	display:block;
+	float:left;
+	height:30px;
+	line-height:30px;
+}
+
+/* 商家服务选项框 */
+/* <div class="serviceBox"></div> */
+#service{
+	cursor:pointer;
+	position:relative;
+}
+.serviceBox{
+	font-size:14px;
+	position:absolute;
+	top:-4px;
+	left:-9px;
+	background-color:white;
+	width:70px;
+	height:105px;
+	border:2px solid #FC5819;
+	padding:2px 0;
+	z-index: 2;
+	display:none;
+}
+
+.serviceBox>a{
+	display:block;
+	height:35px;
+	line-height:35px;
+	width:100%;
+	text-align:center;
+}
+.serviceBox>.aTab1:hover,.serviceBox>.aTab2:hover{
+	color:#FF571A;
+}
+
+/*底部导航*/
+.bottomNav{
+	height:400px;
+	background-color:rgb(31, 31, 31);
+}
+.bottomNav .intro{
+	overflow: hidden;
+}
+.bottomNav .intro ul{
+	float: left;
+	width:160px;
+	height:130px;
+	margin-right: 36px;
+	margin-top: 26px;
+}
+.bottomNav .intro ul li{
+	color:rgb(113,113,113);
+	font-size: 12px;
+	line-height: 24px;
+}
+.bottomNav .intro ul li:nth-of-type(1){
+	color:#fff;
+	font-size: 16px;
+	line-height:32px;
+}
+.bottomNav .intro .code img{
+	width:66px;
+	height:66px;
+}
+.bottomNav .city,.bottomNav .carweb,.bottomNav .w1200>span{
+	color:rgb(113,113,113);
+	margin-top: 30px;
+	font-size: 12px;
+	line-height: 24px;
+	width:1200px;
+	height:60px;
+}
+.bottomNav .carweb{
+	border-top:1px solid rgb(113,113,113);
+	border-bottom:1px solid rgb(113,113,113);
+}
+.bottomNav .city a,.bottomNav .carweb a{
+	text-decoration: underline;
+	margin-right: 10px;
+	text-align: center;
+}
+
+/*侧边栏*/
+.fixedNav{
+	position:fixed;
+	right:0;
+	bottom:50px;
+	width:52px;
+	height:284px;
+	z-index:1;
+	transition:width .25s;
+}
+.fixedNav:hover{
+	width:80px;
+}
+.fixedNav:hover .anchor span{
+	width:auto;
+}
+.fixedNav div{
+	height:34px;
+	overflow:hidden;
+	background-color:rgb(255, 88, 26);
+	text-indent:14px;
+	font-size:14px;
+	line-height:34px;
+	color:white;
+}
+.fixedNav .anchor{
+	cursor: pointer;
+	float:left;
+	width:100%;
+	height:54px;
+	overflow:hidden;
+	background-color:rgb(247, 247, 247);
+	border-bottom:1px solid rgb(230, 230, 230);
+	border-left:1px solid rgb(230, 230, 230);
+	font-size:12px;
+	color:rgb(102, 102, 102);
+	position: relative;
+}
+.fixedNav .anchor:hover{
+	background-color:white;
+}
+.fixedNav .anchor .icon3{
+	margin:10px 0 8px 18px;
+	display:block;
+	width:17px;
+	height:17px;
+	/*background-color:black;*/
+	background-image: url("../image/aicons3.png");
+}
+.fixedNav .anchor .favor{
+	background-position:0 0;
+}
+.fixedNav .anchor .favor1{
+	background-position:0 -20px;
+	display: none;
+}
+.fixedNav .anchor .consult{
+	background-position:-19px 0;
+}
+.fixedNav .anchor .consult1{
+	background-position:-19px -19px;
+	display: none;
+}
+.fixedNav .anchor .sell{
+	background-position:-40px -42px;
+}
+.fixedNav .anchor .sell1{
+	background-position:-40px -60px;
+	display: none;
+}
+.fixedNav .anchor .feedback{
+	background-position:-80px -1px;
+}
+.fixedNav .anchor .feedback1{
+	background-position:-80px -21px;
+	display: none;
+}
+.fixedNav .anchor span{
+	margin-left:16px;
+	display:block;
+	width:24px;
+	height:12px;
+	overflow:hidden;
+}
+.top{
+	position:fixed;
+	right:0;
+	bottom:50px;
+	width:52px;
+	height:25px;
+	background-color:rgb(51, 51, 51);
+	text-align:center;
+	font-size:12px;
+	line-height:25px;
+	color:white;
+	cursor:pointer;
+	z-index:1;
+}
+.feedbackform{
+	width:800px;
+	height:400px;
+	background: #fff;
+	position:fixed;
+	right:0;
+	bottom:50px;
+	z-index:1;
+	display: none;
+}
+.feedbackform .head{
+	width:900px;
+	height:35px;
+	background:rgb(255,87,26);
+	color:#fff;
+	position: relative;
+}
+.feedbackform .head span{
+	font-size: 16px;
+	line-height: 35px;
+	text-indent: 30px;
+	display: block;
+}
+.feedbackform .head .close{
+	position: absolute;
+	top:10px;
+	right:110px;
+	display: block;
+	width: 12px;
+	height:12px;
+	background-position:-100px 0;
+	overflow: hidden;
+	cursor: pointer;
+}
+.feedbackform .right{
+	width:55px;
+}
+.feedbackform .right .anchor{
+	float:left;
+	width:100%;
+	height:54px;
+	overflow:hidden;
+	background-color:rgb(247, 247, 247);
+	border-bottom:1px solid rgb(230, 230, 230);
+	border-left:1px solid rgb(230, 230, 230);
+	font-size:12px;
+	color:rgb(102, 102, 102);
+	position: relative;
+	cursor:pointer;
+}
+.feedbackform .right .anchor:hover{
+	background-color:white;
+}
+.feedbackform .right .anchor .icon3{
+	margin:10px 0 8px 18px;
+	display:block;
+	width:17px;
+	height:17px;
+	/*background-color:black;*/
+	background-image: url("../image/aicons3.png");
+}
+.feedbackform .right .anchor .favor{
+	background-position:0 0;
+}
+.feedbackform .right .anchor .consult{
+	background-position:-19px 0;
+}
+.feedbackform .right .anchor .sell{
+	background-position:-40px -42px;
+}
+.feedbackform .right .anchor .feedback{
+	background-position:-80px -20px;
+}
+.feedbackform .right .anchor span{
+	margin-left:16px;
+	display:block;
+	width:24px;
+	height:12px;
+	overflow:hidden;
+}
+
+.feedbackform .left>span{
+	display: block;
+	font-size: 14px;
+	line-height: 55px;
+	text-indent: 30px;
+}
+.feedbackform .left textarea{
+	width:400px;
+	height:150px;
+	max-width: 400px;
+	max-height: 150px;
+	display: block;
+	margin:30px auto;
+}
+.feedbackform .left button{
+	border-radius:5px;
+	background-color:#ff571a;
+	color:white;
+	font-size:14px;
+	padding:0 20px;
+	height:30px;
+	border:none;
+	cursor:pointer;
+	outline:none;
+	display: block;
+	margin-left: 600px;
+}
+
+.signBox{
+	width:400px;
+	height:450px;
+	background: #fff;
+	position:fixed;
+	left:40%;
+	top:20%;
+	z-index:102;
+	display: none;
+}
+.signBox>span{
+	display: block;
+    font-size: 16px;
+	line-height: 100px;
+	text-indent: 20px;
+}
+.signBox .close{
+	position: absolute;
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: url("../image/close.png") no-repeat;
+	right: 20px;
+	top: 40px;
+	cursor: pointer;
+}
+
+.signBox .form{
+	width:260px;
+	height:180px;
+	/*border:1px solid;*/
+	margin:0 auto;
+}
+.signBox .form label{
+	display: block;
+	font-size: 15px;
+	color:rgb(68,68,68);
+	line-height: 50px;
+}
+.signBox .form   .tel-controller input{
+	background: url("../image/tel.png") no-repeat;
+	background-position: right center;
+	width: 243px;
+	height: 21px;
+	line-height: 20px;
+	border: 1px solid #d1d1d1;
+	padding-left: 7px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.signBox .form .mail-controller input{
+	background: url("../image/captcha.png") no-repeat;
+	background-position: right center;
+	width: 137px;
+	height: 19px;
+	line-height: 20px;
+	border: 1px solid #d1d1d1;
+	padding-left: 7px;
+	vertical-align: top;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+.signBox .form button {
+	width: 97px;
+	height: 35px;
+	border: 1px solid #d1d1d1;
+	border-radius: 3px;
+	background-color: #f5f5f5;
+	font-size: 12px;
+	color: #333;
+	margin-left: 5px;
+	cursor: pointer;
+	line-height: 35px;
+	vertical-align: top;
+}
+.signBox .form-button {
+	width: 250px;
+	height: 35px;
+	color: #fff;
+	font-size: 16px;
+	border: none;
+	background-color: #FF5517;
+	margin-top: 15px;
+	margin-left: 70px;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+
+
+

@@ -1,0 +1,59 @@
+.bgBox{
+    width:100%;
+    height:600px;
+    background-color:#1A1A1A;
+    background-image:url("../image/aboutusbg.png") ;
+    overflow: hidden;
+    background-size: cover;
+}
+.bgBox .words{
+    width:320px;
+    height:150px;
+    /*border:1px solid;*/
+    margin:80px auto 20px;
+    color:#fff;
+    text-align: center;
+}
+.bgBox .words h1{
+    font-size: 50px;
+}
+.bgBox .words>span{
+    font-size: 16px;
+    display:block;
+    line-height:64px;
+}
+.bgBox .milestone img{
+    margin-top: 100px;
+    width:1190px;
+    height:100px;
+}
+.group,.teacher {
+     width:100%;
+     height:800px;
+     margin-top: 50px;
+ }
+.teacher {
+    background: rgb(246,246,246);
+    margin-top: 50px;
+}
+.group .text,.teacher .text{
+    width:340px;
+    height:140px;
+    /*border:1px solid;*/
+    margin:50px auto;
+    text-align: center;
+}
+.group .text span,.teacher .text span{
+    color:rgb(153,153,153);
+    line-height: 100px;
+}
+.group .images,.teacher .images{
+    width:1240px;
+    height:500px;
+  /*  border:1px solid;*/
+}
+.group .images img,.teacher .images img{
+    width:380px;
+    height:250px;
+    margin-right: 25px;
+}

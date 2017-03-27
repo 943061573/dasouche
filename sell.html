@@ -1,0 +1,464 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/core1.css"/>
+	<link rel="stylesheet" type="text/css" href="css/sell.css"/>
+</head>
+<body>
+	<!-- ******************** sell - topNav ******************** -->
+	<!--登录 注册界面-->
+	<div class="signBox">
+		<span>登录</span>
+		<div class="i close"></div>
+		<div class="form">
+			<div class="tel-controller">
+				<label>手机号:</label>
+				<input  class="tel-text-input" placeholder="请输入正确的手机号" type="text">
+			</div>
+			<div class="mail-controller">
+				<label>验证码:</label>
+				<input  class="tel-text-input" placeholder="请查收短信" type="text">
+				<button>获取验证码</button>
+			</div>
+		</div>
+		<input class="form-button" id="login_button" value="登 录" type="submit">
+	</div>
+	<div id="all"></div>
+	<div class="topNav normal" id="topNav">
+		<div class="w1200">
+			<a class="logo"></a>
+			<div class="area">
+				<span>杭州</span>
+				<i class="i down"></i>
+				<div class="areaSelectBox">
+					<div class="hotCity">
+						<span>热门</span>
+						<a>北京</a><a>宁波</a><a>厦门</a><a>深圳</a><a>成都</a>
+					</div>
+					<div class="otherCity">
+						<span>华北</span>
+						<a>北京</a><a>天津</a><a>河北</a><a>山西</a><a>内蒙古</a>
+					</div>
+					<div class="otherCity">
+						<span>东北</span>
+						<a>辽宁</a><a>吉林</a><a>黑龙江</a>
+					</div>
+					<div class="otherCity">
+						<span>华东</span>
+						<a>上海</a><a>江苏</a><a>浙江</a><a>安徽</a><a>福建</a><a>江西</a>
+					</div>
+					<div class="otherCity">
+						<span>华中</span>
+						<a>河南</a><a>湖北</a><a>湖南</a>
+					</div>
+					<div class="otherCity">
+						<span>华南</span>
+						<a>广东</a><a>广西</a>
+					</div>
+					<div class="otherCity">
+						<span>西南</span>
+						<a>重庆</a><a>四川</a><a>云南</a><a>贵州</a>
+					</div>
+					<div class="otherCity">
+						<span>西北</span>
+						<a>陕西</a><a>宁夏</a><a>新疆</a>
+					</div>
+				</div>
+			</div>
+			<a class="anchor" href="index.html">首页</a>
+			<a class="anchor"  href="buy.html">我要买车</a>
+			<a class="anchor"  href="sell.html">我要卖车</a>
+			<div class="anchor" id="service">
+				商家服务
+				<div class="serviceBox">
+					<a>商家服务</a>
+					<a href="windmill_product.html" class="aTab1">大风车</a>
+					<a href="oxcart.html" class="aTab2">车牛</a>
+				</div>
+			</div>
+
+			<a class="anchor"  href="aboutus.html">关于我们</a>
+			<input placeholder="搜索" />
+			<a class="sign signIn">登录</a>
+			<a class="sign signUp">注册</a>
+			<div class="icon tel"></div>
+		</div>
+	</div>
+
+	<!-- ******************** sell - main ******************** -->
+	<div class="sellBg">
+		<div class="sellBgTitle">
+			<h1>出爱车，卖多少才好？</h1>
+			<span>报价+服务ABCD任你选</span>
+		</div>
+		<div class="sellPaper"> <!-- 卖车信息申请 -->
+			<div class="paperTitle">
+				<span>提交爱车信息 帮您卖车</span>
+				<a href="sellEvaluate.html">估个价先 &raquo;</a>
+			</div>
+			<form class="paperDetail">
+				<div class="input iptLR">
+					<span>选择车型</span>
+					<img src="./image/sell_open.png"/>
+				</div>
+					<div class="select-box">
+						<span class="close-btn">
+		               <img src="./image/close_btn.jpg" />
+	                    </span>
+						<div class="wrap">
+							<ul class="first"></ul>
+							<ul class="second"></ul>
+							<ul class="third"></ul>
+						</div>
+					</div>
+				<div class="input iptL ipts">
+					<span>上牌时间</span>
+					<img src="./image/sell_open.png"/>
+				</div>
+				<div class="select-time">
+					<span class="close-btn">
+						<img src="./image/close_btn.jpg" />
+					</span>
+					<ul class="select-year">
+						<li>2016年</li>
+						<li>2015年</li>
+						<li>2014年</li>
+						<li>2013年</li>
+						<li>2012年</li>
+						<li>2011年</li>
+						<li>2010年</li>
+					</ul>
+					<ul class="select-month">
+						<li>1月</li>
+						<li>2月</li>
+						<li>3月</li>
+						<li>4月</li>
+						<li>5月</li>
+						<li>6月</li>
+						<li>7月</li>
+						<li>8月</li>
+						<li>9月</li>
+						<li>10月</li>
+						<li>11月</li>
+						<li>12月</li>
+					</ul>
+				</div>
+				<div class="input iptR iptS">
+					<input type="text" placeholder="行驶里程"/>
+					<span>万公里</span>
+				</div>
+				<div class="input iptL ipta">
+					<span>请选择所在地</span>
+					<img src="./image/sell_open.png"/>
+				</div>
+				<div class="select-area">
+						<span class="close-btn">
+		               <img src="./image/close_btn.jpg" />
+	                    </span>
+					<div class="wrap">
+						<ul class="boxs" id="provinces"></ul>
+						<ul class="boxs" id="citys"></ul>
+					</div>
+				</div>
+				<div class="input iptR iptc">
+					<span>外观颜色</span>
+					<img src="./image/sell_open.png"/>
+				</div>
+				<div class="select-color">
+					<span class="close-btn">
+						<img src="./image/close_btn.jpg" />
+					</span>
+					<ul>
+						<li>黑色</li>
+						<li>白色</li>
+						<li>灰色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>绿色</li>
+						<li>黄色</li>
+						<li>香槟色</li>
+						<li>紫色</li>
+						<li>银色</li>
+						<li>其他</li>
+					</ul>
+				</div>
+				<div class="input iptL ipth">
+					<span>希望多久能卖掉</span>
+					<img src="./image/sell_open.png"/>
+				</div>
+				<div class="select-soldtime">
+					<span class="close-btn">
+						<img src="./image/close_btn.jpg" />
+					</span>
+					<ul>
+						<li>一周内</li>
+						<li>一月内</li>
+						<li>三个月内</li>
+						<li>三个月以上</li>
+						<li>不限</li>
+					</ul>
+				</div>
+				<div class="input iptR">
+					<span>卖车理由</span>
+					<img src="./image/sell_open.png"/>
+				</div>
+				<div class="checkBox">
+					<span class="sL"><input type="checkbox"/>&nbsp;无重大事故</span>
+					<span><input type="checkbox"/>&nbsp;全程4S店保养</span><br/>
+					<span class="sL"><input type="checkbox"/>&nbsp;一手车，不曾交易</span>
+					<span><input type="checkbox"/>&nbsp;内饰完好</span>
+				</div>
+				<button type="button" id="submit">提交</button>
+				<div class="sweep">扫码关注微信，随时查询报价</div>
+		</form>
+		</div>
+		<div class="sellCode">
+			<div class="wechat"></div>
+			<p>或添加微信号：dasouche</p>
+			<div class="sweep">扫码关注微信，随时查询报价</div>
+		</div>
+	</div>
+
+	<div class="midLine">
+		<div><h3>上爱车</h3><span>1分钟，提交爱车信息</span></div>
+		<div><h3>等报价</h3><span>就近车商3天内诚意报价</span></div>
+		<div><h3>选车商</h3><span>选好价格，选服务</span></div>
+		<div><h3>定交易</h3><span>看好车谈好价，成交!</span></div></div>
+
+	<div class="bigLineItem">
+		<div class="img">
+			<img src="./image/sell_bigLineItem1.png"></div>
+		<div class="word">
+			<h1>15万车商，等待为您报价</h1>
+			<span>遍布23省5自治区4直辖市2特别行政区</span>
+			<br/><span>就近城市，更优服务！</span></div></div>
+	<div class="bigLineItem">
+		<div class="img">
+			<img src="./image/sell_bigLineItem2.png"></div>
+		<div class="word">
+			<h1>开价不合适，不给联系方式</h1>
+			<span>巧妙地躲开大量车商的骚扰</span>
+			<br/><span>选谁不选谁，对上才算！</span></div></div>
+	<div class="bigLineItem">
+		<div class="img">
+			<img src="./image/sell_bigLineItem3.png"></div>
+		<div class="word">
+			<h1>3天有效展示，10个最优报价</h1>
+			<span>可拼价格，也可参考服务</span>
+			<br/><span>信誉有选择，无障碍。</span></div></div>
+	
+	<div class="wantSell"><button>我要卖车</button></div>
+
+	<div class="bottomNav">
+		<div class="intro w1200">
+			<ul class="guide">
+				<li><a href="">导购大全</a></li>
+				<li><a href="">城市大全</a></li>
+				<li><a href="">品牌大全</a></li>
+				<li><a href="">车系大全</a></li>
+			</ul>
+			<ul class="buycar">
+				<li><a href="">购车指南</a></li>
+				<li><a href="">如何挑选二手车</a></li>
+				<li><a href="">如何判断事故火烧水浸车</a></li>
+				<li><a href="">二手车指标说明</a></li>
+			</ul>
+			<ul class="aboutus">
+				<li><a href="">关于我们</a></li>
+				<li><a href="">大搜车理念</a></li>
+				<li><a href="">车牛</a></li>
+				<li><a href="">大风车</a></li>
+				<li><a href="">大搜车手机版</a></li>
+			</ul>
+			<ul class="contactus">
+				<li><a href="">联系我们</a></li>
+				<li><a href="">联系电话</a></li>
+			</ul>
+			<ul class="code">
+				<li><img src="./image/code" alt=""></li>
+				<li>扫一扫，关注微信公众号</li>
+			</ul>
+		</div>
+		<div class="city w1200">
+			<span>热门城市:</span>
+			<a href=""> 厦门</a>
+			<a href="">北京</a>
+			<a href="">南宁</a>
+			<a href="">杭州</a>
+			<a href="">郑州</a>
+			<a href="">漳州</a>
+			<a href="">长沙</a>
+			<a href="">合肥</a>
+			<a href="">西安</a>
+			<a href="">上海</a>
+			<a href="">宁波</a>
+			<a href="">温州</a>
+			<a href="">太原</a>
+			<a href="">青岛</a>
+			<a href="">南京</a>
+			<a href="">武汉</a>
+			<a href="">沈阳</a>
+			<a href="">成都</a>
+			<a href="">石家庄</a>
+			<a href="">重庆</a>
+			<a href="">台州</a>
+			<a href="">大连</a>
+			<a href="">福州</a>
+			<a href="">佛山</a>
+			<a href="">临沂</a>
+			<a href="">济南</a>
+			<a href="">苏州</a>
+			<a href="">贵阳</a>
+			<a href="">泉州</a>
+			<a href="">南昌</a>
+			<a href="">天津</a>
+			<a href="">东莞</a>
+			<a href="">深圳</a>
+			<a href="">昆明</a>
+			<a href="">广州</a>
+			<a href="">包头</a>
+			<a href="">鞍山</a>
+			<a href="">淮南</a>
+			<a href="">长春</a>
+			<a href="">金华</a>
+			<a href="">乌鲁木齐</a>
+			<a href="">无锡</a>
+			<a href="">柳州</a>
+			<a href="">潍坊</a>
+			<a href="">荆州</a>
+			<a href="">保定</a>
+			<a href="">枣庄</a>
+			<a href="">洛阳</a>
+			<a href="">常州</a>
+			<a href="">沧州</a>
+			<a href="">更多城市</a>
+		</div>
+		<div class="carweb w1200">
+			<a href="">车险信息网</a>
+			<a href="">中山二手车</a>
+			<a href="">车易拍</a>
+			<a href="">海南二手车</a>
+			<a href="">汽车点评网</a>
+			<a href="">杭州二手车</a>
+			<a href="">2014汽车报价</a>
+			<a href="">北京汽车网</a>
+			<a href="">中国二手车网</a>
+			<a href="">汽车配件</a>
+			<a href="">二手车评估</a>
+			<a href="">湖北专用车</a>
+			<a href="">中国汽车网</a>
+			<a href="">大浙汽车</a>
+			<a href="">搜狐二手车</a>
+			<a href="">车300估价</a>
+			<a href="">58二手车</a>
+			<a href="">二手车评估</a>
+		</div>
+		<div class="w1200">
+		<span >
+	        Copyright © 2016 SouChe All Rights Reserved 杭州大搜车汽车服务有限公司 版权所有 京 ICP备 13012136号 京公网安备 11010802013095号
+       </span>
+		</div>
+	</div>
+	<!--侧边固定栏/-->
+	<div class="fixedNav">
+		<div>我的车库</div>
+		<a class="anchor anchor1">
+			<i class="icon3 favor"></i>
+			<i class="icon3 favor1"></i>
+			<span>关注的车</span>
+		</a>
+		<a class="anchor anchor2">
+			<i class="icon3 consult"></i>
+			<i class="icon3 consult1"></i>
+			<span>咨询的车</span>
+		</a>
+		<a class="anchor anchor3">
+			<i class="icon3 sell"></i>
+			<i class="icon3 sell1"></i>
+			<span>估价卖车</span>
+		</a>
+		<a class="anchor anchor4">
+			<i class="icon3 feedback"></i>
+			<i class="icon3 feedback1"></i>
+			<span>反馈信息</span>
+		</a>
+	</div>
+	<a class="top" id="top">TOP</a>
+	<!--反馈表单-->
+	<div class="feedbackform">
+		<div class="head">
+			<span>我的车库</span>
+			<i class="icon2 close"></i>
+		</div>
+		<div class="right">
+			<ul>
+				<li>
+					<a class="anchor">
+						<i class="icon3 favor"></i>
+						<span>关注的车</span>
+					</a>
+				</li>
+				<li>
+					<a class="anchor">
+						<i class="icon3 consult"></i>
+						<span>咨询的车</span>
+					</a>
+				</li>
+				<li>
+					<a class="anchor">
+						<i class="icon3 sell"></i>
+						<span>估价卖车</span>
+					</a>
+				</li>
+				<li>
+					<a class="anchor">
+						<i class="icon3 feedback"></i>
+						<span>反馈信息</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="left">
+			<span>意见反馈</span>
+            <textarea placeholder="请填写反馈，我们会尊重每一位用户的意见..." autoFocus>
+            </textarea>
+			<button>提交反馈</button>
+		</div>
+	</div>
+
+	<div class="info-send">
+		<span>完成卖车信息提交</span>
+		<div class="close"></div>
+		<form id="phone-form">
+			<div class="woring hidden" id="woring">
+				<i class="error-tip"></i>
+				<span>请输入正确电话号码</span>
+			</div>
+			<div class="sub-phone">
+				<span>*</span>
+				<input value="" placeholder="手机：(必填)" id="phone-num" name="phone">
+			</div>
+			<div class="sub-name">
+				<input placeholder="姓名：" id="user-name" name="name">
+			</div>
+			<div class="form-sub">
+				<button id="last_submit" type="button">完成提交</button>
+			</div>
+		</form>
+	</div>
+	<div class="success-info">
+		<div class="close"></div>
+		<span>您的卖车需求已成功提交!</span>
+		<div class="wechat"></div>
+		<p>扫码关注大搜车微信，随时查询车辆报价</p>
+		<button>确定</button>
+	</div>
+	<script src="./js/jquery-1.12.2.min.js"></script>
+	<script src="./js/cityJson.js"></script>
+	<script src="./js/effect.js"></script>
+</body>
+</html>

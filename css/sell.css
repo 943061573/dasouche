@@ -1,0 +1,513 @@
+/* sell - main */
+
+/* sell - bg */
+.sellBg{
+	margin:0 auto;
+	width:1441px;
+	height:460px;
+	position:relative;
+	background-image: url(../image/sell_sellBg.png);
+}
+
+
+/* sell - bgTitle */
+.sellBgTitle{
+	color:white;
+	padding-top:100px;
+	padding-left:200px;
+}
+.sellBgTitle>h1{
+	font-size:40px;
+	font-weight:bold;
+	line-height:70px;
+}
+.sellBgTitle>span{
+	font-size:18px;
+}
+
+
+/* sell - sellPaper */
+.sellPaper{
+	padding:20px 30px;
+	position:absolute;
+	top:30px;left:800px;
+	background-color:white;
+	width:320px;
+	height:360px;
+}
+
+/* sell - sellPaperTitle */
+.paperTitle{
+	margin-bottom:20px;
+	width:100%;
+	overflow:hidden;
+}
+.paperTitle>span{
+	line-height:40px;
+	display:block;
+	float:left;
+	height:40px;
+	font-size:18px;
+}
+.paperTitle>a{
+	display:block;
+	float:right;
+	font-size:14px; color:#FF571A;
+	height:40px;
+	line-height:40px;
+}
+
+/* sell - sellPaperForm */
+/* sellPaperForm - select */
+.paperDetail>.input{
+	margin-bottom:10px;
+	border:2px solid #EDEDED;
+	padding-left:10px;
+	height:30px;
+}
+.input>span{
+	display:block;
+	float:left;
+	color:#999;
+	line-height:30px;
+	font-size:14px;
+	cursor:pointer;
+}
+.input>img{
+	margin:13px 10px 0 0;
+	width:7px;
+	height:4px;
+	float:right;
+	cursor:pointer;
+}
+/*选择车型*/
+.iptLR{
+	width:306px;
+	position: relative;
+}
+.select-box{
+	font-size:12px;
+	border:solid 1px #fd8340;
+	width:536px;
+	height:220px;
+	padding:20px 20px 10px;
+	position:absolute;
+	z-index:5;
+	background: #fff;
+	display: none;
+}
+ .select-box .close-btn , .select-time .close-btn,.select-area .close-btn,.select-color .close-btn,.select-soldtime .close-btn{
+	position:absolute;
+	right:5px;
+	top:5px;
+	cursor: pointer;
+}
+ .select-box .wrap,.select-area .wrap {
+	height:200px;
+	border:solid 1px #ddd;
+	margin-top:5px;
+}
+ .select-box ul, .select-time ul,.select-area ul,.select-color ul{
+	margin-top: 10px;
+	float:left;
+	width:178px;
+	height:200px;
+	overflow-y: scroll;
+}
+.select-soldtime ul{
+	margin-top: 10px;
+	float:left;
+	width:178px;
+	height:200px;
+}
+ .select-box ul li, .select-time ul li,.select-area ul li,.select-color ul li,.select-soldtime ul li{
+	height:25px;
+	line-height:25px;
+	padding:0 10px;
+	background: url(../image/arr.gif) no-repeat 152px center;
+	color:#626262;
+	cursor: pointer;
+}
+ .select-box ul li.selected {
+	background:url(../image/arr_selected.gif) no-repeat 152px center #fd8340;
+	color:#fff;
+}
+ /*选择上牌时间*/
+.iptL,.iptR{
+	width:140px;
+	float:left;
+}
+.iptL{
+	margin-right:12px;
+	position: relative;
+}
+.select-time{
+	font-size:12px;
+	border:solid 1px #fd8340;
+	width:360px;
+	height:220px;
+	padding:20px 20px 10px;
+	position:absolute;
+	top:160px;
+	z-index:5;
+	background: #fff;
+	display: none;
+}
+.select-area{
+	font-size:12px;
+	border:solid 1px #fd8340;
+	width:360px;
+	height:220px;
+	padding:20px 20px 10px;
+	position:absolute;
+	left:-300px;
+	top:210px;
+	z-index:5;
+	background: #fff;
+	display: none;
+}
+.select-color{
+	font-size:12px;
+	border:solid 1px #fd8340;
+	width:200px;
+	height:220px;
+	padding:20px 20px 10px;
+	position:absolute;
+	left:200px;
+	top:210px;
+	z-index:5;
+	background: #fff;
+	display: none;
+}
+.select-soldtime{
+	font-size:12px;
+	border:solid 1px #fd8340;
+	width:200px;
+	height:220px;
+	padding:20px 20px 10px;
+	position:absolute;
+	left:-110px;
+	top:250px;
+	z-index:5;
+	background: #fff;
+	display: none;
+}
+.select-time ul li:hover,.select-area ul li:hover,.select-color ul li:hover,.select-soldtime ul li:hover{
+	background:url(../image/arr_selected.gif) no-repeat 152px center #fd8340;
+	color:#fff;
+}
+.iptS>span{
+	padding-right:10px;
+}
+.iptS>input{
+	border:none;
+	outline:none;
+	display:block;
+	float:left;
+	width:85px;
+	height:30px;
+}
+
+/* sellPaperForm - checkbox */
+.checkBox>span{
+	display:block;
+	float:left;
+	width:154px;
+	font-size:14px;
+	height:25px;
+	line-height:25px;
+}
+.checkBox>.sL{
+	margin-right:12px;
+}
+.checkBox>span>input{
+	vertical-align:middle;
+}
+
+/* sellPaperForm - button */
+.paperDetail>button{
+	border-radius:3px;
+	width:100%;
+	height:35px;
+	background-color:#FF571A;
+	border:none;
+	outline:none;
+	color:white;
+	font-size:16px;
+	margin-top:10px;
+	cursor:pointer;
+}
+
+/* Sweep WeChat QRcode */
+.paperDetail>.sweep{
+	height:30px;
+	line-height:30px;
+	width:100%;
+	text-align:center;
+	font-size:14px;
+	cursor:pointer;
+}
+/*二维码*/
+.sellCode{
+	padding:20px 30px;
+	position:absolute;
+	top:30px;left:800px;
+	background-color:white;
+	width:320px;
+	height:360px;
+	display: none;
+}
+.sellCode .wechat{
+	margin-top: 32px;
+	margin-bottom: 33px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 176px;
+	height: 176px;
+	background-image: url(../image/code1.png);
+	background-size: 100%;
+}
+.sellCode p{
+	height:30px;
+	line-height:30px;
+	width:100%;
+	text-align:center;
+	font-size:16px;
+	cursor:pointer;
+}
+.sellCode .sweep{
+	height:30px;
+	line-height:150px;
+	width:100%;
+	text-align:center;
+	font-size:14px;
+	cursor:pointer;
+	color:rgb(255,87,26);
+}
+/* Mid Line : Four Blocks */
+.midLine,.bigLineItem{
+	margin:0 auto;
+	width:1200px;
+	border-bottom:1px solid #EDEDED;
+}
+.midLine{
+	height:148px;
+}
+.midLine>div{
+	margin-top:50px;
+	float:left;
+	padding-left:80px;
+	width:220px;
+}
+.midLine>div>h3{
+	color:#FF571A;
+	line-height:30px;
+}
+.midLine>div>span{
+	font-size:14px;
+	color:gray;
+}
+
+
+/* Three Big Line Item */
+.bigLineItem{
+	height:429px;
+	padding:30px 0;
+}
+.bigLineItem>.img{
+	float:left;
+	margin-left:100px;
+}
+.bigLineItem>.word{
+	margin:165px 0 0 50px;
+	float:left;
+	height:100px;
+}
+.word>h1{
+	line-height:50px;
+}
+.word>span{
+	line-height:25px;
+	color:gray;
+}
+
+
+/* Want Sell Buttton */
+.wantSell{
+	width:120px;
+	height:35px;
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom: 76px;
+}
+.wantSell>button{
+	border:none;
+	color:white;
+	width:120px;
+	height:35px;
+	background-color:#FF571A;
+	outline:none;
+	cursor:pointer;
+	border-radius: 2px ;
+}
+
+/*info-send*/
+.info-send{
+	position: fixed;
+	left:40%;
+	top:20%;
+	z-index:102;
+	margin-left: -205px;
+	width: 410px;
+	height: 318px;
+	padding: 22px;
+	background: #fff;
+	display: none;
+}
+.info-send span{
+	font-size: 20px;
+	color: #333;
+	margin-bottom: 50px;
+}
+.info-send .close {
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	background: url("../image/close.png") no-repeat;
+	right: 20px;
+	top: 20px;
+	cursor: pointer;
+}
+.info-send #phone-form {
+	width: 250px;
+	margin: 0 auto;
+}
+.info-send #phone-form .woring {
+	position: absolute;
+	top: 55px;
+	right: 100px;
+	width: 250px;
+	height: 32px;
+	border: 1px solid #F29797;
+	background: #FFE8EF;
+	color: #EE394B;
+	display:none;
+}
+.woring .error-tip {
+	display: block;
+	float: left;
+	width: 12px;
+	height: 12px;
+	background: url('../image/error.png') no-repeat;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.woring span {
+	line-height: 30px;
+	margin-left: 10px;
+}
+#phone-form .sub-phone {
+	position: relative;
+	height: 22px;
+	margin-bottom: 30px;
+	margin-top:70px;
+}
+#phone-form .sub-phone span {
+	position: absolute;
+	top: 8px;
+	left: -10px;
+	color: #FF5417;
+	font-size: 14px;
+}
+#phone-form .sub-phone #phone-num {
+	width: 250px;
+	height: 22px;
+	border: 1px solid #DDDDDD;
+	line-height: 18px;
+	color: #999;
+	padding: 6px 8px;
+}
+#phone-form .sub-name {
+	height: 22px;
+	margin-bottom: 30px;
+	position: relative;
+}
+#phone-form .sub-name #user-name {
+	width: 120px;
+	height:22px;
+	border: 1px solid #DDDDDD;
+	line-height: 18px;
+	color: #999;
+	padding: 6px 8px;
+	margin-right: 20px;
+}
+#phone-form .form-sub button {
+	width: 250px;
+	height: 40px;
+	color: #fff;
+	background: #FF5517;
+	line-height: 40px;
+	text-align: center;
+	font-size: 16px;
+	border-radius: 2px;
+	border: none;
+	cursor: pointer;
+}
+/*success-info*/
+.success-info{
+	position: fixed;
+	top: 120px;
+	left: 50%;
+	margin-left: -205px;
+	width: 410px;
+	height:465px;
+	background: #fff;
+	text-align: center;
+	z-index: 102;
+	display: none;
+}
+.success-info .close {
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	background: url("../image/close.png") no-repeat;
+	right: 20px;
+	top: 20px;
+	cursor: pointer;
+}
+.success-info span{
+	display: block;
+	margin-top: 63px;
+	line-height: 24px;
+	font-size: 20px;
+	color: #333333;
+}
+.success-info .wechat {
+	margin-top: 32px;
+	margin-bottom: 33px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 130px;
+	height: 130px;
+	background-image: url(../image/code1.png);
+}
+.success-info p{
+	color: #666666;
+	display: block;
+	text-align: center;
+	line-height: 24px;
+	font-size: 14px;
+}
+.success-info button{
+	width: 160px;
+	height: 40px;
+	font-size: 16px;
+	color: #fff;
+	background: #FF5517;
+	border-radius: 2px;
+	line-height: 40px;
+	margin: 20px auto;
+	cursor: pointer;
+	border-radius: 2px;
+	border: none;
+}

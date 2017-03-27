@@ -1,0 +1,81 @@
+body{
+    padding:0;
+}
+.w1400{
+    width:1400px;
+    margin:0 auto;
+}
+/* Head */
+.head{
+    height:80px;
+    overflow: hidden;
+}
+/* Head - logo & title */
+.head>a{
+    overflow:hidden;
+    /*display:inline-block;*/
+
+}
+.head>a>.logoPic{
+    margin-top:26px;
+    width:30px;
+    height:28px;
+    display:block;
+    float:left;
+    background-position:-10px 0;
+    background-image:url("../image/windmillProject_icons1.png");
+}
+.head>a>span{
+    line-height:80px;
+    display:block;
+    float:left;
+    font-size:24px;
+    color:black;
+}
+.head>ul{
+    float:right;
+    overflow: hidden;
+}
+.head>ul>li{
+    list-style:none;
+    margin:0 15px;
+    height:80px;
+    float:left;
+    line-height:80px;
+}
+.head>ul>li>a{
+    padding:5px 8px;
+    color:black;
+    font-size:14px;
+}
+.head>ul>li>.active{
+    background-color:#ff571a;
+    border-radius:5px;
+    color:white;
+}
+.head>ul>li>a:hover{
+    background-color:#ff571a;
+    border-radius:5px;
+    color:white;
+}
+
+.code{
+    width:100%;
+    height:400px;
+}
+.code .text{
+    width:300px;
+    height:300px;
+    margin:180px auto 20px;
+    text-align:center;
+    color:rgb(102,102,102);
+    font-size: 14px;
+}
+.code .text img{
+    width:155px;
+    height:155px;
+}
+.code .text span{
+    display: block;
+    line-height: 50px;
+}

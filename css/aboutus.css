@@ -1,0 +1,32 @@
+/* aboutus.css - main */
+.aboutusBg{
+	width:750px;
+	height:500px;
+	margin:0 auto;
+	margin-top:50px;
+}
+
+.aboutUs{
+	width:710px;
+	font-size:16px;
+	padding:0 20px;
+	height:auto;
+	margin:0 auto;
+	margin-top:20px;
+	margin-bottom: 32px;
+}
+.aboutUs>h1{
+	width:100%;
+	text-align:center;
+	height:150px;
+	line-height:150px;
+	font-size:36px;
+	font-weight:bold;
+}
+.aboutUs>p{
+	margin-bottom:30px;
+}
+.aboutUs>span{
+	display:block;
+	line-height:30px;
+}
